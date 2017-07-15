@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# spooky.sh
+# Prints how spooky something is to STDOUT
+# Usage: spooky.sh [-n NUMBER]
+# If -n is omitted, it defaults to 2spooky4me
+
+if [ "$1" = '-n' ] ; then
+        if [ ! -z "${2##*[!0-9]*}" ] ; then
+                n=$2
+        else
+                echo "-n must be followed by a positive integer, butt."
+                exit
+        fi
+else
+n=2
+fi
+
+echo "${n}spooky$((n+=2))me"
