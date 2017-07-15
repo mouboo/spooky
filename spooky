@@ -2,7 +2,7 @@
 
 # spooky.sh
 # Prints how spooky something is to STDOUT
-# Usage: spooky.sh [-n NUMBER]
+# Usage: spooky [-n NUMBER]
 # If -n is omitted, it defaults to 2spooky4me
 
 if [ "$1" = '-n' ] ; then
